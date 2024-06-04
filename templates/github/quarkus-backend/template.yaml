@@ -67,7 +67,7 @@ spec:
         groupId:
           title: Group ID
           type: string
-          default: io.janus
+          default: org.neen
           description: Maven Group ID eg (io.janus)
         artifactId:
           title: Artifact ID
@@ -82,7 +82,7 @@ spec:
         javaPackageName:
           title: Java Package Namespace
           type: string
-          default: io.janus.quarkusapp
+          default: org.neen.quarkusapp
           description: Name for the Java Package (e.g. io.janus.quarkusapp) should match Group ID and Artifact ID
     - title: Provide information about the CI method
       required:

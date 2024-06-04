@@ -51,7 +51,7 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ env.IMAGE_TAGS }}
           containerfiles: |
-            ./src/main/docker/Dockerfile.native-micro
+            ./Dockerfile
 
       - name: Log in to Quay.io
         uses: redhat-actions/podman-login@v1
