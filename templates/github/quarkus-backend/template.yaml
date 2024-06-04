@@ -10,7 +10,7 @@ metadata:
     - maven
 spec:
   owner: user:dendod96
-  system: neen-idp
+  system: BackstageTesting
   type: service
 
   parameters:
