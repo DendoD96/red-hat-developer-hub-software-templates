@@ -9,7 +9,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: user:dendod96
+  owner: user:default/dendod96
   system: BackstageTesting
   type: service
 
@@ -25,13 +25,16 @@ spec:
         orgName:
           title: Organization Name
           type: string
+          default: "BackstageTesting"
         repoName:
           title: Repository Name
           type: string
+          default: "bike-microservice"
         description:
           title: Description
           type: string
           description: Help others understand what this component is for
+          default: "This is the bike microservice of Pedal application"
         owner:
           title: Owner
           type: string
@@ -89,9 +92,9 @@ spec:
           title: Select a CI method
           type: string
           description: This action will create a CI pipeline for your application based on chosen method
-          default: ../../../skeletons/github-actions/
+          default: ../../../skeletons/github-actions-quarkus/
           enum:
-            - ../../../skeletons/github-actions/
+            - ../../../skeletons/github-actions-quarkus/
             - ../../../skeletons/tekton/
           enumNames:
             - GitHub Action
@@ -102,7 +105,7 @@ spec:
             - properties:
                 # Show no extra properties when GitHub Actions is selected
                 ci:
-                  const: ../../../skeletons/github-actions/
+                  const: ../../../skeletons/github-actions-quarkus/
             - required:
                 - imageRepository
                 - namespace
@@ -209,6 +212,7 @@ spec:
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
         defaultBranch: main
+        repoVisibility: public
 
     - id: register
       name: Registering the Catalog Info Component
