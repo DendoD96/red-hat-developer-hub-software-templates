@@ -9,7 +9,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: daniele-rossi
+  owner: user:dendod96
   system: neen-idp
   type: service
 
