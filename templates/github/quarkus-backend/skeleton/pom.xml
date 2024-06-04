@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>${{ values.groupId }}</groupId>
-  <artifactId>${{ values.artifactId }}-runner</artifactId>
+  <artifactId>${{ values.artifactId }}</artifactId>
   <version>${{ values.version  }}</version>
   <description>${{ values.description }}</description>
   <properties>

@@ -42,7 +42,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
-        run: ./mvnw package
+        run: ./mvnw package -Dnative -Dquarkus.native.container-build=true
 
       - name: Build Image
         id: build-image
