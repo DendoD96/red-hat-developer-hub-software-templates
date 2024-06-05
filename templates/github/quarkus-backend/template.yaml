@@ -213,6 +213,7 @@ spec:
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
         defaultBranch: main
         repoVisibility: public
+        protectDefaultBranch: false
 
     - id: register
       name: Registering the Catalog Info Component
